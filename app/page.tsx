@@ -44,7 +44,7 @@ export default function Home() {
       <section className="section">
         <div className="container">
           <div className="darkBand">
-            <h2>فكرة المنصة باختصار</h2>
+            <h2>فكرة المنصة </h2>
             <p>تساعد مسار المزارع على جدولة نظام الري بناء على بيانات المزرعة واحتياج النبات واكتشاف الأعطال أو الهدر وتحليل مؤشرات التربة والرطوبة واكتشاف الآفات الزراعية وربط الحالات بالمختصين وتوفير سوق زراعي متكامل يربط المزارعين بالموردين والشركات المتخصصة</p>
           </div>
         </div>
@@ -88,9 +88,9 @@ export default function Home() {
         <div className="container dashboardGrid">
           <div className="darkBand"><h2>شركاؤنا</h2><p>تعمل مسار مع أكثر من 65 شركة محلية وعالمية في مجالات الزراعة والري والتقنيات الزراعية مما يعزز ثقة المزارعين في جودة الحلول والمنتجات المتاحة داخل المنصة</p><br /><Link className="btn btnPrimary" href="/dashboard">شاهد الأثر</Link></div>
           <div className="grid3" style={{ gridTemplateColumns: "1fr" }}>
-            <div className="statCard"><strong>18.7M</strong><span>ريال قيمة طلبات ومنتجات وخدمات عبر المنصة</span></div>
+            <div className="statCard"><strong>42</strong><span>منتجات وخدمات عبر المنصة</span></div>
             <div className="statCard"><strong>34%</strong><span>متوسط خفض الهدر في عينات الري المتابعة</span></div>
-            <div className="statCard"><strong>1,480</strong><span>طلب استشارة وخدمة ميدانية</span></div>
+            <div className="statCard"><strong>89</strong><span>طلب استشارة وخدمة ميدانية</span></div>
           </div>
         </div>
       </section>

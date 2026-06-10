@@ -17,8 +17,8 @@ export default function Footer() {
           </div>
           <div>
             <h3>تواصل</h3>
-            <p>support@masar-ai.sa</p>
-            <p>9200 000 68</p>
+            <p>masaragri.co@gmail.com</p>
+            <p>0505120689</p>
             <div className="social"><a>X</a><a>in</a><a>ig</a></div>
           </div>
         </div>
