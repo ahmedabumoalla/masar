@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import { products } from "@/lib/data"
 import { ShoppingBag, Menu } from "lucide-react"
 import { useEffect, useState } from "react"
 
@@ -8,7 +9,9 @@ export default function Header() {
   const [count, setCount] = useState(0)
   useEffect(() => {
     const update = () => {
-      const cart = JSON.parse(localStorage.getItem("masar-cart") || "[]")
+      const validSlugs = new Set(products.map((product) => product.slug))
+      const cart = JSON.parse(localStorage.getItem("masar-cart") || "[]").filter((item: { slug: string }) => validSlugs.has(item.slug))
+      localStorage.setItem("masar-cart", JSON.stringify(cart))
       setCount(cart.reduce((sum: number, item: { qty: number }) => sum + item.qty, 0))
     }
     update()

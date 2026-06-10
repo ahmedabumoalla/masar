@@ -1,14 +1,20 @@
 "use client"
 
+import { products } from "@/lib/data"
 import { useEffect, useMemo, useState } from "react"
 
 type CartItem = { slug: string; name: string; price: number; image: string; company: string; qty: number }
+const validSlugs = new Set(products.map((product) => product.slug))
 
 export default function CheckoutForm() {
   const [items, setItems] = useState<CartItem[]>([])
   const [done, setDone] = useState(false)
   const [error, setError] = useState("")
-  useEffect(() => setItems(JSON.parse(localStorage.getItem("masar-cart") || "[]")), [])
+  useEffect(() => {
+    const next = JSON.parse(localStorage.getItem("masar-cart") || "[]").filter((item: CartItem) => validSlugs.has(item.slug))
+    setItems(next)
+    localStorage.setItem("masar-cart", JSON.stringify(next))
+  }, [])
   const total = useMemo(() => items.reduce((sum, item) => sum + item.price * item.qty, 0), [items])
   const submit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()

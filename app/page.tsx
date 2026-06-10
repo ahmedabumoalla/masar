@@ -28,15 +28,15 @@ export default function Home() {
               <Link className="btn btnGhost" href="/services/install">اطلب تركيب الجهاز</Link>
             </div>
             <div className="heroStats">
-              <div className="statCard"><strong>25,000+</strong><span>عملية تحليل بيانات</span></div>
-              <div className="statCard"><strong>650+</strong><span>مزرعة مستفيدة</span></div>
-              <div className="statCard"><strong>6,320+</strong><span>عميل نشط</span></div>
-              <div className="statCard"><strong>65+</strong><span>شريك محلي وعالمي</span></div>
+              <div className="statCard"><strong>1,500+</strong><span>عملية تحليل بيانات</span></div>
+              <div className="statCard"><strong>50+</strong><span>مزرعة مستفيدة</span></div>
+              <div className="statCard"><strong>1,320+</strong><span>عميل نشط</span></div>
+              <div className="statCard"><strong>23+</strong><span>شريك محلي وعالمي</span></div>
             </div>
           </div>
           <div className="heroVisual">
             <div className="screen"><img src="/illustrations/hero-farm.svg" alt="مزرعة ذكية متصلة بمنصة مسار" /></div>
-            <div className="floatingPanel"><b>92%</b><span>دقة في رصد مؤشرات الري والتنبيه المبكر بناء على البيانات الميدانية</span></div>
+            <div className="floatingPanel"><b>98%</b><span>دقة في رصد مؤشرات الري والتنبيه المبكر بناء على البيانات الميدانية</span></div>
           </div>
         </div>
       </section>
@@ -88,9 +88,9 @@ export default function Home() {
         <div className="container dashboardGrid">
           <div className="darkBand"><h2>شركاؤنا</h2><p>تعمل مسار مع أكثر من 65 شركة محلية وعالمية في مجالات الزراعة والري والتقنيات الزراعية مما يعزز ثقة المزارعين في جودة الحلول والمنتجات المتاحة داخل المنصة</p><br /><Link className="btn btnPrimary" href="/dashboard">شاهد الأثر</Link></div>
           <div className="grid3" style={{ gridTemplateColumns: "1fr" }}>
-            <div className="statCard"><strong>42</strong><span>منتجات وخدمات عبر المنصة</span></div>
-            <div className="statCard"><strong>34%</strong><span>متوسط خفض الهدر في عينات الري المتابعة</span></div>
-            <div className="statCard"><strong>89</strong><span>طلب استشارة وخدمة ميدانية</span></div>
+            <div className="statCard"><strong>32</strong><span>منتجات وخدمات عبر المنصة</span></div>
+            <div className="statCard"><strong>45%</strong><span>متوسط خفض الهدر في عينات الري المتابعة</span></div>
+            <div className="statCard"><strong>132</strong><span>طلب استشارة وخدمة ميدانية</span></div>
           </div>
         </div>
       </section>
